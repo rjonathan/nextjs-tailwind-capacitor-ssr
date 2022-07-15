@@ -3,11 +3,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "lint": "next lint"
   },
   "dependencies": {
+    "@capacitor/android": "^3.6.0",
+    "@capacitor/core": "^3.6.0",
     "next": "^12.1.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^3.6.0"
   }
 }
