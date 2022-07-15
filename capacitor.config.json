@@ -2,5 +2,13 @@
   "appId": "com.example.app",
   "appName": "App",
   "webDir": "out",
-  "bundledWebRuntime": false
+  "bundledWebRuntime": false,
+  "plugins": {
+    "SplashScreen": {
+        "launchShowDuration": 0
+    }
+  },
+  "ios": {
+      "contentInset": "always"
+  }
 }
