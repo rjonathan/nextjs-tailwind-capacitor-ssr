@@ -1,8 +1,17 @@
+import Link from 'next/link'
+
 function HomePage() {
     return (
+        <>
       <h1 className="text-3xl font-bold underline">
-        Hello world nextjs + tailwind !
+        Page 2
       </h1>
+
+
+        <Link href="/">
+          <a>Accueil</a>
+        </Link>
+        </>
     )
 
   }
