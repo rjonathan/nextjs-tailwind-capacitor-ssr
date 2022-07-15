@@ -1,19 +1,12 @@
 import Link from 'next/link'
+import Navigation from '@/components/layout/navigation'
 import { AnimatePresence } from 'framer-motion'
 
-const AppLayout = ({ children }) => {
+const AppLayout = ({ children, menuCurrent }) => {
     return (
         <div className=" flex flex-col justify-between bg-white  md:bg-gray-100">
            
-           Menu
-
-           <Link href="/">
-          <a>Accueil</a>
-        </Link>
-
-           <Link href="/page2">
-    <a>Page 2</a>
-  </Link>
+           <Navigation menuCurrent={menuCurrent} />
 
             <main>
                 <div className="max-w-7xl mx-auto  md:px-6 ">

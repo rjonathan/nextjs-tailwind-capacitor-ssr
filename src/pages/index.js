@@ -22,7 +22,7 @@ Hello world nextjs + tailwind !
 
   HomePage.getLayout = function getLayout(page) {
     return (
-      <Layout>
+      <Layout menuCurrent='index'>
             {page}
       </Layout>
     )

@@ -22,7 +22,7 @@ function Page() {
 
   Page.getLayout = function getLayout(page) {
     return (
-      <Layout>
+      <Layout  menuCurrent='page2'>
             {page}
       </Layout>
     )
