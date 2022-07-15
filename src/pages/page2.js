@@ -1,19 +1,29 @@
-import Link from 'next/link'
+import Layout from '@/components/layout/appLayout'
+import PageLayout from '@/components/layout/pageLayout'
 
-function HomePage() {
+
+
+function Page() {
     return (
         <>
+         <PageLayout>
       <h1 className="text-3xl font-bold underline">
         Page 2
-      </h1>
+      </h1></PageLayout>
 
 
-        <Link href="/">
-          <a>Accueil</a>
-        </Link>
+       
         </>
     )
 
   }
   
-  export default HomePage
+  export default Page
+
+  Page.getLayout = function getLayout(page) {
+    return (
+      <Layout>
+            {page}
+      </Layout>
+    )
+  }
