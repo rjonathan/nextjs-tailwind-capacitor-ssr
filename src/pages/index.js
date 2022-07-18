@@ -7,7 +7,7 @@ function HomePage() {
 <>
 <PageLayout>
 <h1 className="text-3xl font-bold underline">
-Hello world nextjs + tailwind !
+iOS app + Androïd app + Server side renering (SSR) webapp with nextjs, capacitor and tailwind !
 </h1>
 </PageLayout>
 
