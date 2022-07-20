@@ -1,4 +1,6 @@
-module.exports = {
+const withPWA = require('next-pwa')
+
+module.exports = withPWA({
     i18n: {
       locales: ["fr"],
       defaultLocale: "fr",
@@ -7,4 +9,4 @@ module.exports = {
         dest: 'public',
         sw: 'service-worker.js',
       }
-  };
+  });
