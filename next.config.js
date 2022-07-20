@@ -3,4 +3,7 @@ module.exports = {
       locales: ["fr"],
       defaultLocale: "fr",
     },
+    pwa: {
+        dest: 'public'
+      }
   };
