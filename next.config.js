@@ -4,6 +4,7 @@ module.exports = {
       defaultLocale: "fr",
     },
     pwa: {
-        dest: 'public'
+        dest: 'public',
+        sw: 'service-worker.js',
       }
   };
