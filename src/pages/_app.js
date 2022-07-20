@@ -1,6 +1,7 @@
 import 'tailwindcss/tailwind.css'
 
 
+
 function App({ Component, pageProps: { ...pageProps } }) {
   
     // Use the layout defined at the page level, if available

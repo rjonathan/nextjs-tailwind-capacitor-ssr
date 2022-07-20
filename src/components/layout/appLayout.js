@@ -1,9 +1,13 @@
-import Link from 'next/link'
+import Head from 'next/head'
 import Navigation from '@/components/layout/navigation'
 import { AnimatePresence } from 'framer-motion'
 
 const AppLayout = ({ children, menuCurrent }) => {
     return (
+        <>
+        <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
         <div className=" flex flex-col justify-between bg-white  md:bg-gray-100">
            
            <Navigation menuCurrent={menuCurrent} />
@@ -25,6 +29,7 @@ const AppLayout = ({ children, menuCurrent }) => {
                 </div>
             </main>
         </div>
+        </>
     )
 }
 
