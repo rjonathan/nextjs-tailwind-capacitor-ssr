@@ -35,8 +35,16 @@ const SWR = ({ fallback }) => {
 };
 export default SWR;
 
+
+
+
+SWR.getInitialProps = async (ctx) => {
+  const data = await fetcher(url);
+  return { fallback: { [`${url}`]: data } }
+}
+
 /*export const getServerSideProps =
-    process.env.NEXT_PUBLIC_SKIP_SSR == 1 ? undefined : init*/
+    process.env.NEXT_PUBLIC_SKIP_SSR == 1 ? undefined : init
 
 async function init() {
   const data = await fetcher(url);
@@ -46,8 +54,12 @@ async function init() {
       fallback: { [`${url}`]: data },
     },
   };
-}
+}*/
 
 SWR.getLayout = function getLayout(page) {
-  return <Layout menuCurrent="page2">{page}</Layout>;
+  return (
+    <Layout menuCurrent="page2">
+      {page}
+    </Layout>
+    )
 };
