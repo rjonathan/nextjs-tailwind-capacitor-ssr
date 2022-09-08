@@ -16,6 +16,12 @@ const Navigation = ({ menuCurrent }) => {
       current: menuCurrent == "page2" ? true : false,
       icon: DocumentIcon,
     },
+    {
+      name: "Page 3",
+      href: "/page3",
+      current: menuCurrent == "page3" ? true : false,
+      icon: DocumentIcon,
+    },
   ];
 
   return (

@@ -2,6 +2,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "buildnative": "sed -i 's/getServerSideProps/getServerSidePropsAAAAA/g' ./src/pages/*.js && next build && next export && npx cap sync && sed -i 's/getServerSidePropsAAAAA/getServerSideProps/g' ./src/pages/*.js",
     "start": "next start",
     "export": "next export",
     "lint": "next lint"
@@ -11,6 +12,7 @@
     "@capacitor/core": "^3.6.0",
     "@capacitor/ios": "^3.6.0",
     "@heroicons/react": "^1.0.6",
+    "babel-plugin-search-and-replace": "^1.1.1",
     "framer-motion": "^6.5.1",
     "next": "^12.1.6",
     "next-pwa": "^5.5.4",
